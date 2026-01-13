@@ -32,7 +32,7 @@ The goal is to make loan access:
 - Inclusive
 - Easy to use for low-literacy users
 
-<img width="755" height="535" alt="Acrobat_zrXkoXcwMa" src="https://github.com/user-attachments/assets/f0610344-ca62-4a77-8258-7f728fa5aaa8" />
+<img width="377.5" height="267.5" alt="Acrobat_zrXkoXcwMa" src="https://github.com/user-attachments/assets/f0610344-ca62-4a77-8258-7f728fa5aaa8" />
 
 ---
 
@@ -78,12 +78,12 @@ The goal is to make loan access:
 5. If approved → AI explains approval and loan is disbursed  
 6. If rejected → AI suggests missing documents or corrective steps  
 
-<img width="833" height="620" alt="Acrobat_BVVN1rdPLX" src="https://github.com/user-attachments/assets/05d5932d-c051-4d3f-ae92-e07d178270c3" />
+<img width="416.5" height="310" alt="Acrobat_BVVN1rdPLX" src="https://github.com/user-attachments/assets/05d5932d-c051-4d3f-ae92-e07d178270c3" />
 
 ---
 
 ##  AI Architecture
-<img width="1058" height="494" alt="Acrobat_PooGkAuqfQ" src="https://github.com/user-attachments/assets/ebacea60-2d82-4a33-b17f-a9148810c439" />
+<img width="529" height="247" alt="Acrobat_PooGkAuqfQ" src="https://github.com/user-attachments/assets/ebacea60-2d82-4a33-b17f-a9148810c439" />
 
 ### Components
 
