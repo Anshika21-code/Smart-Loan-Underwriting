@@ -25,9 +25,9 @@ def explain_decision(income, credit_score, dti, approved):
         suggestions.append("Provide additional income proof or guarantor if available.")
 
     if approved:
-        summary = "Loan approved ✅"
+        summary = "Loan approved "
     else:
-        summary = "Loan not approved ❌"
+        summary = "Loan not approved "
         if not reasons:
             reasons.append("Risk score from model is below the acceptance cut-off.")
 
@@ -37,12 +37,12 @@ def explain_decision(income, credit_score, dti, approved):
         "suggestions": suggestions
     }
 
-# ✅ Home Page
+# Home Page
 @app.route('/')
 def home():
     return render_template('index.html')
 
-# ✅ Prediction API (Used by Voice + Form)
+#  Prediction API (Used by Voice + Form)
 @app.route('/api/predict', methods=['POST'])
 def api_predict():
     data = request.get_json()
@@ -56,7 +56,7 @@ def api_predict():
     exp = explain_decision(income, credit_score, dti, y==1)
 
     # Store in session for /result page
-    session["result"] = "Approved ✅" if y == 1 else "Rejected ❌"
+    session["result"] = "Approved " if y == 1 else "Rejected "
     session["confidence"] = round(conf, 2)
     session["reasons"] = exp["reasons"]
     session["steps"] = exp["suggestions"]
@@ -67,7 +67,7 @@ def api_predict():
         "explanation": exp
     })
 
-# ✅ Final Result Page
+#  Final Result Page
 @app.route('/result')
 def result_page():
     return render_template(
@@ -78,6 +78,6 @@ def result_page():
         steps=session.get("steps")
     )
 
-# ✅ Run Server
+#  Run Server
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000)
